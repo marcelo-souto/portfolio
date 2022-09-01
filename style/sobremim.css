@@ -1,0 +1,37 @@
+.sobremim {
+  background: var(--grad-1);
+  padding: 60px;
+  box-sizing: border-box;
+  border-radius: 26px;
+  margin-top: -60px;
+}
+
+.sobremim-conteudo {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.sobremim img {
+  max-width: 340px;
+}
+
+.sobremim h2 {
+  font-family: "Inter", sans-serif;
+  color: var(--cor-0);
+  font-size: 4rem;
+  line-height: 1.125;
+  margin-bottom: 40px;
+}
+
+.sobremim p {
+  color: var(--cor-3);
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.sobremim strong {
+  color: var(--cor-0);
+  font-weight: 700;
+}

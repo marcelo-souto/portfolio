@@ -1,0 +1,38 @@
+:root {
+  --cor-0: #FFFFFF;
+  --cor-1: #EEEEEE;
+  --cor-2: #DCDCDC;
+  --cor-3: #A4A4A4;
+  --cor-4: #4F4F4F;
+  --cor-5: #121212;
+  --cor-6: #000000;
+  --cor-p1: #9013DD;
+  --grad-1: linear-gradient(13.99deg, #000000 0%, #242424 77.98%);
+  --grad-2: linear-gradient(180deg, #9013DD 0%, #7320A6 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, ul, h1, h2, h3, p{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F5F5F5;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}

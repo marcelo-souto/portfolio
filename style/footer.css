@@ -1,0 +1,114 @@
+.footer-bg {
+  background-color: var(--cor-6);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  gap: 40px;
+  align-items: end;
+}
+
+.footer-contatos h2 {
+  font-family: "inter", sans-serif;
+  color: var(--cor-0);
+  font-size: 2rem;
+  margin-bottom: 80px;
+}
+
+.contato-info li {
+  list-style: none;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--cor-3);
+}
+
+.contato-info li + li {
+  margin-top: 8px;
+}
+
+.contato-info a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.contato-redes {
+  margin-top: 40px;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+  row-gap: 20px;
+}
+
+.formulario div:nth-child(3) {
+  grid-column: span 2;
+}
+
+.formulario div:nth-child(3) input {
+  height: 100%;
+}
+
+.formulario div {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario label {
+  color: var(--cor-0);
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.formulario input, .formulario textarea {
+  background-color: var(--cor-5);
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #151515;
+  resize: none;
+  color: var(--cor-3);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 100%;
+}
+
+
+.formulario input:focus, .formulario textarea:focus{
+  outline: solid 2px #2D2D2D;
+}
+
+.formulario input::placeholder, .formulario textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--cor-4);
+}
+
+.formulario button {
+  background: var(--grad-2);
+  border-radius: 6px;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--cor-1);
+  cursor: pointer;
+  justify-self: start;
+  padding: 16px 24px;
+  grid-column: span 2;
+}
+
+.footer-copy {
+  grid-column: span 2;
+  color: var(--cor-4);
+}
