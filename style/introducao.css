@@ -21,3 +21,39 @@
   justify-self: center;
   filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.10));
 }
+
+@media (max-width: 960px) {
+  .introducao h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .introducao h1 {
+    font-size: 3rem;
+  }
+  .introducao span {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .introducao {
+    padding-top: 0px;
+  }
+  .introducao h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width:540px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao img {
+    display: none;
+  }
+  .introducao span {
+    color: var(--cor-p1);
+  }
+}

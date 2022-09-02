@@ -4,18 +4,25 @@
 
 .footer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  'titulo formulario'
+  'contatos formulario'
+  'copyright copyright';
   padding-top: 60px;
   padding-bottom: 60px;
   gap: 40px;
-  align-items: end;
 }
 
-.footer-contatos h2 {
+.footer h2 {
   font-family: "inter", sans-serif;
   color: var(--cor-0);
   font-size: 2rem;
   margin-bottom: 80px;
+  grid-area: titulo;
+}
+
+.footer-contatos {
+  grid-area: contatos;
 }
 
 .contato-info li {
@@ -38,22 +45,18 @@
   margin-top: 40px;
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
 
 .formulario {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 60px;
-  row-gap: 20px;
+  gap: 40px;
+  grid-area: formulario;
 }
 
 .formulario div:nth-child(3) {
   grid-column: span 2;
-}
-
-.formulario div:nth-child(3) input {
-  height: 100%;
 }
 
 .formulario div {
@@ -71,6 +74,7 @@
 
 .formulario input, .formulario textarea {
   background-color: var(--cor-5);
+  box-sizing: border-box;
   padding: 12px;
   border-radius: 6px;
   border: 1px solid #151515;
@@ -81,7 +85,6 @@
   line-height: 1.5;
   width: 100%;
 }
-
 
 .formulario input:focus, .formulario textarea:focus{
   outline: solid 2px #2D2D2D;
@@ -110,6 +113,65 @@
 }
 
 .footer-copy {
-  grid-column: span 2;
   color: var(--cor-4);
+  grid-area: copyright;
+}
+
+@media (max-width: 1060px) {
+  .footer {
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 840px) {
+  .footer {
+    grid-template-areas:
+    'titulo titulo'
+    'formulario formulario'
+    'contatos contatos'
+    'copyright copyright';
+    padding-top: 40px;
+    gap: 40px;
+  }
+  .footer h2 {
+    margin-bottom: 0px;
+  }
+  .contato-info li {
+    font-size: 1rem;
+  }
+  .formulario {
+    max-width: 520px;
+    gap: 20px;
+  }
+  .formulario button {
+    padding: 16px 16px;
+    font-size: 0.8rem;
+  }
+  .footer-copy {
+    margin-top: 20px;
+  }
+  .contato-info {
+    margin-top: -20px;
+    border-top: 1px solid var(--cor-5);
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .formulario {
+    grid-template-columns: 1fr;
+  }
+  .formulario div:nth-child(2), .formulario div:nth-child(3) {
+    grid-column: 1;
+  }
+  .footer-copy {
+    font-size: 0.8rem;
+  }
 }
