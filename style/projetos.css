@@ -113,10 +113,6 @@
     animation: apontando 1s infinite;
   }
 
-  .projetos-display::-webkit-scrollbar {
-    display: none;
-  }
-
   @keyframes apontando {
     0% {
       transform: translate(0px);

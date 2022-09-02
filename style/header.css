@@ -21,6 +21,7 @@
   padding: 16px 0px;
   font-size: 1.125rem;
   line-height: 1.5;
+  transition: .3s ;
 }
 
 @media (max-width: 680px) {
@@ -40,5 +41,8 @@
     padding: 8px 16px;
     border-radius: 6px;
     font-size: 1rem;
+  }
+  .header-menu a:hover {
+    background-color: var(--cor-2);
   }
 }
