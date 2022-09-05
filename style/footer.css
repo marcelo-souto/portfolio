@@ -1,3 +1,5 @@
+/* =========================================== FOOTER ============================================= */
+
 .footer-bg {
   background-color: var(--cor-6);
 }
@@ -13,6 +15,8 @@
   gap: 40px;
 }
 
+/* TITULO DO AREA DE CONTATOS */
+
 .footer h2 {
   font-family: "inter", sans-serif;
   color: var(--cor-0);
@@ -24,6 +28,8 @@
 .footer-contatos {
   grid-area: contatos;
 }
+
+/* INFORMAÇOES DE CONTATO  */
 
 .contato-info li {
   list-style: none;
@@ -46,12 +52,16 @@
   color: var(--cor-0);
 }
 
+/* INFORMAÇOES DAS REDES SOCIAIS */
+
 .contato-redes {
   margin-top: 40px;
   list-style: none;
   display: flex;
   gap: 20px;
 }
+
+/* FORMULARIO DE CONTATO */
 
 .formulario {
   display: grid;
@@ -105,6 +115,7 @@
 .formulario button {
   background: var(--grad-2);
   border-radius: 6px;
+  border: none;
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 600;
@@ -121,10 +132,14 @@
   background: linear-gradient(180deg, #8309CE 0%, #5D128C 100%);
 }
 
+/* COPYRIGHT */
+
 .footer-copy {
   color: var(--cor-4);
   grid-area: copyright;
 }
+
+/* =========================================== FOOTER - MEDIA QUERIES ============================================= */
 
 @media (max-width: 1060px) {
   .footer {
@@ -176,6 +191,7 @@
 @media (max-width: 500px) {
   .formulario {
     grid-template-columns: 1fr;
+    column-gap: 0px;
   }
   .formulario div:nth-child(2), .formulario div:nth-child(3) {
     grid-column: 1;

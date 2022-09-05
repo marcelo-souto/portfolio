@@ -1,3 +1,5 @@
+/* =========================================== HEADER ============================================= */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -7,12 +9,16 @@
   padding-bottom: 40px;
 }
 
+/* MENU DO HEADER */
+
 .header-menu {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   list-style: none;
 }
+
+/* LINKS DO MENU */
 
 .header-menu a {
   text-decoration: none;
@@ -23,6 +29,8 @@
   line-height: 1.5;
   transition: .3s ;
 }
+
+/* =========================================== HEADER - MEDIA QUERIES ============================================= */
 
 @media (max-width: 680px) {
   .header {

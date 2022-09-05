@@ -1,3 +1,5 @@
+/* =========================================== VARIAVEIS DE CORES UTILIZADAS NO PROJETO ============================================= */
+
 :root {
   --cor-0: #ffffff;
   --cor-1: #eeeeee;
@@ -11,9 +13,13 @@
   --grad-2: linear-gradient(180deg, #9013dd 0%, #7320a6 100%);
 }
 
+/* SUAVIZAÇÃO DO SCROLL */
+
 html {
   scroll-behavior: smooth;
 }
+
+/* RESET DE ESTILO PADRAO DO NAVEGADOR */
 
 body,
 ul,
@@ -35,6 +41,8 @@ img {
   display: block;
 }
 
+/* =========================================== CSS UTILITARIOS ============================================= */
+
 .container {
   max-width: 1200px;
   padding-left: 20px;
@@ -53,6 +61,8 @@ img {
   font-size: 1.5rem;
   line-height: 1.5;
 }
+
+/* =========================================== CSS UTILITARIOS - MEDIA QUERIES ============================================= */
 
 @media (max-width: 960px) {
   .titulo-2 {

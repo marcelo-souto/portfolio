@@ -1,101 +1,165 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marcelo Souto</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Desenvolvedor Full Stack e UX/UI Designer localizado no Rio de Janeiro.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style/style.min.css" />
+  <title>Marcelo Souto</title>
+</head>
 
-    <link rel="stylesheet" href="./style/style.css" />
-  </head>
-  <body>
+<body>
 
-    <header class="header container">
-      <img src="./image/logo.svg" alt="Marcelo Souto">
-      <nav>
-        <ul class="header-menu">
-          <li><a href="#sobremim">Sobre mim</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
+   <!-- =========================================== HEADER COM MENU ============================================= -->
 
-    <main class="introducao container" id="introducao">
-      <div class="introducao-conteudo">
-        <span>#WebDev</span>
-        <h1>Desenvolvedor</br>Full Stack &</br>UX/UI Designer</h1>
-      </div>
-      <img src="./image/main-icons.svg" alt="">
-    </main>
-
-    <section class="sobremim container" id="sobremim">
-      <div class="sobremim-conteudo">
-        <img src="./image/avatar.png" alt="avatar">
-        <div class="sobremim-resumo">
-          <h2 class="titulo-2">Sobre mim</h2>
-          <p class="texto-conteudo">Olá, me chamo Marcelo Souto, tenho 24 anos, resido em RJ. Sou estudante da área de <strong>design</strong> e <strong>programação</strong> voltados para web. Sou aluno do projeto <strong>Programadores Cariocas</strong>, onde tenho desenvolvido minhas habilidades para adentrar o mundo tech.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="projetos container" id="projetos">
-      <div class="projetos-resumo">
-        <h2 class="titulo-2">Projetos</h2>
-        <p class="texto-conteudo">Desenvolvo projetos voltados para a web criando a <strong>interface da aplicação</strong> e a <strong>codificação da página</strong>, utilizando as tecnologias mais requisitadas pelo mercado.</p>
-      </div>
-      <ul class="projetos-display">
+  <header class="header container">
+    <img src="./image/logo.svg" alt="Marcelo Souto">
+    <nav>
+      <ul class="header-menu">
         <li>
-          <h3>Projeto 1</h3>
+          <a href="#sobremim">Sobre mim</a>
         </li>
         <li>
-          <h3>Projeto 2</h3>
+          <a href="#projetos">Projetos</a>
         </li>
         <li>
-          <h3>Projeto 3</h3>
+          <a href="#contato">Contato</a>
         </li>
       </ul>
-      <img src="./image/section-icons.svg" alt="">
-    </section>
+    </nav>
+  </header>
 
-    <footer class="footer-bg" id="contato">
-      <div class="footer container">
-        <h2>Entre em contato</h2>
-        <div class="footer-contatos">
-          <ul class="contato-info">
-            <li><a href="tel:+5521971609165">21 97160-9165</a></li>
-            <li><a href="mailto:marcelosouto676@gmail.com">marcelosouto676@gmail.com</a></li>
-            <li>Localizado em Rio de Janeiro</li>
-          </ul>
-          <ul class="contato-redes">
-            <li><a href="https://www.linkedin.com/in/marcelo-souto-17841611b/" target="_blank"><img src="./image/LinkedIn-icon.svg" alt="linkedin"></a></li>
-            <li><a href="https://github.com/marcelo-souto" target="_blank"><img src="./image/github-icon.svg" alt="github"></a></li>
-            <li><a href="https://www.instagram.com/marcelosou.to/" target="_blank"><img src="./image/instagram-icon.svg" alt="instagram"></a></li>
-          </ul>
-        </div>
-        <form class="formulario" action="/">
-          <div>
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" placeholder="Seu nome"/>
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="contato@email.com"/>
-          </div>
-          <div>
-            <label for="mensagem">Mensagem</label>
-            <textarea type="text" name="mensagem" id="mensagem" rows="4" placeholder="O que você precisa?"></textarea>
-          </div>
-          <button>Enviar mensagem</button>
-        </form>
-        <p class="footer-copy">Marcelo Souto. Alguns Direitos Reservados</p>
+   <!-- =========================================== INTRODUCAO ============================================= -->
+
+  <main class="introducao container" id="introducao">
+    <div class="introducao-conteudo">
+      <span>#WebDev</span>
+      <h1>Desenvolvedor</br>Full Stack &</br>UX/UI Designer</h1>
+    </div>
+    <img src="./image/main-icons.svg" alt="imagem decorativa contendo os logotipos do react, javascript e internet.">
+  </main>
+
+   <!-- =========================================== SOBRE MIM ============================================= -->
+
+  <section class="sobremim container" id="sobremim">
+    <div class="sobremim-conteudo">
+      <img src="./image/avatar.png" alt="ilustração de uma pessoa como foto de perfil.">
+      <div class="sobremim-resumo">
+        <h2 class="titulo-2">Sobre mim</h2>
+        <p class="texto-conteudo">Olá, me chamo Marcelo Souto, tenho 24 anos, resido em RJ. Sou estudante da área de
+          <strong>design</strong> e
+          <strong>programação</strong> voltados para web. Sou aluno do projeto
+          <strong>Programadores Cariocas</strong>, onde tenho desenvolvido minhas habilidades para adentrar o mundo tech.</p>
       </div>
+    </div>
+  </section>
 
-    </footer>
+   <!-- =========================================== PROJETOS ============================================= -->
 
-  </body>
+  <section class="projetos container" id="projetos">
+    <div class="projetos-resumo">
+      <h2 class="titulo-2">Projetos</h2>
+      <p class="texto-conteudo">Desenvolvo projetos voltados para a web criando a
+        <strong>interface da aplicação</strong> e a
+        <strong>codificação da página</strong>, utilizando as tecnologias mais requisitadas pelo mercado.</p>
+    </div>
+    <ul class="projetos-display">
+      <li>
+        <h3>Projeto 1</h3>
+      </li>
+      <li>
+        <h3>Projeto 2</h3>
+      </li>
+      <li>
+        <h3>Projeto 3</h3>
+      </li>
+    </ul>
+    <img src="./image/section-icons.svg" alt="imagem decorativa contendo os logotipos do css, html e banco de dados">
+    <div class="seta-direita"></div>
+  </section>
+
+   <!-- =========================================== FOOTER ============================================= -->
+
+  <footer class="footer-bg" id="contato">
+    <div class="footer container">
+      <h2>Entre em contato</h2>
+      <div class="footer-contatos">
+        <ul class="contato-info">
+          <li>
+            <a href="tel:+5521971609165">21 97160-9165</a>
+          </li>
+          <li>
+            <a href="mailto:marcelosouto676@gmail.com">marcelosouto676@gmail.com</a>
+          </li>
+          <li>Localizado em Rio de Janeiro</li>
+        </ul>
+        <ul class="contato-redes">
+          <li>
+            <a href="https://www.linkedin.com/in/marcelo-souto-17841611b/" target="_blank">
+              <img src="./image/LinkedIn-icon.svg" alt="linkedin">
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/marcelo-souto" target="_blank">
+              <img src="./image/github-icon.svg" alt="github">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/marcelosou.to/" target="_blank">
+              <img src="./image/instagram-icon.svg" alt="instagram">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <form class="formulario" action="/">
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" placeholder="Seu nome" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="contato@email.com" />
+        </div>
+        <div>
+          <label for="mensagem">Mensagem</label>
+          <textarea type="text" name="mensagem" id="mensagem" rows="4" placeholder="O que você precisa?"></textarea>
+        </div>
+        <button>Enviar mensagem</button>
+      </form>
+      <p class="footer-copy">Marcelo Souto. Alguns Direitos Reservados</p>
+    </div>
+  </footer>
+
+  <script>
+
+    const btnEnviar = document.querySelector("button"); // BOTAO DO FORMULARIO
+    const setaDireita = document.querySelector('.seta-direita'); // SETA DIREITA PARA AJUDA AO USUARIO
+    const projetosDisplay = document.querySelector('.projetos-display'); // AREA DE PROJETOS DO SITE
+
+    // BOTAO IRA APARECER COM O EVENTO DE TOQUE
+    window.addEventListener('touchstart', () => {
+      setaDireita.style.display = "block";
+    })
+
+    // BOTAO IRA DESAPARECER CONFORME SCROLL DA AREA DE PROJETOS
+    projetosDisplay.addEventListener('touchmove', () => {
+      if (projetosDisplay.scrollLeft > 100) {
+        setaDireita.style.opacity = '0%';
+      }
+    })
+
+    // RESET DO BOTAO DE FORMULARIO
+    btnEnviar.addEventListener('click', (e) => {
+      e.preventDefault();
+    })
+  </script>
+
+</body>
 </html>

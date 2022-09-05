@@ -1,8 +1,12 @@
+/* =========================================== MAIN INTRODUCAO  ============================================= */
+
 .introducao {
   display: grid;
   grid-template-columns: 7fr 5fr;
   padding-top: 40px;
 }
+
+/* SUBTITULO DECORATIVO */
 
 .introducao span {
   font-size: 2rem;
@@ -12,15 +16,21 @@
   margin-bottom: 8px;
 }
 
+/* TITULO PRINCIPAL DA PÁGINA */
+
 .introducao h1 {
   font-size: 4.75rem;
   line-height: 1.2;
 }
 
+/* IMAGEM DE DECORACAO */
+
 .introducao img {
   justify-self: center;
   filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.10));
 }
+
+/* =========================================== INTRODUCAO - MEDIA QUERIES ============================================= */
 
 @media (max-width: 960px) {
   .introducao h1 {

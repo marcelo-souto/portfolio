@@ -1,3 +1,5 @@
+/* =========================================== SECTION PROJETOS ============================================= */
+
 .projetos {
   display: grid;
   grid-template-columns: 7fr 5fr;
@@ -6,10 +8,14 @@
   position: relative;
 }
 
+/* TITULO DA SECTION */
+
 .projetos h2 {
   color: var(--cor-5);
   margin-top: 60px;
 }
+
+/* TEXTO DA SECTION */
 
 .projetos p {
   color: var(--cor-4);
@@ -20,11 +26,15 @@
   color: var(--cor-5);
 }
 
+/* IMAGEM DECORATIVA */
+
 .projetos img {
   margin-top: -40px;
   justify-self: center;
   filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.10));
 }
+
+/* DISPLAY COM MINIATURAS DOS PROJETOS */
 
 .projetos-display {
   grid-column: 1;
@@ -70,6 +80,8 @@
   background-color: var(--cor-p1);
 }
 
+/* =========================================== PROJETOS - MEDIA QUERIES ============================================= */
+
 @media (max-width: 1060px) {
   .projetos-display {
     margin-top: -80px;
@@ -101,16 +113,25 @@
 }
 
 @media (max-width: 800px) {
-  .projetos::after {
-    content: "";
+  .projetos-display {
+    gap: 20px;
+    padding: 6px 20px 6px 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    
+  }
+
+  .projetos .seta-direita {
     width: 34px;
     height: 14px;
+    position: absolute;
+    bottom: -20px;
+    right: 24px;
     background: url("../image/arrow.svg") no-repeat center;
     background-size: 100%;
-    position: absolute;
-    bottom: -24px;
-    right: 28px;
-    animation: apontando 1s infinite;
+    animation: apontando .8s infinite ;
+    transition: opacity .3s ;
+    display: none;
   }
 
   @keyframes apontando {
