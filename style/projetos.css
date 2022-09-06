@@ -1,5 +1,4 @@
 /* =========================================== SECTION PROJETOS ============================================= */
-
 .projetos {
   display: grid;
   grid-template-columns: 7fr 5fr;
@@ -9,25 +8,21 @@
 }
 
 /* TITULO DA SECTION */
-
 .projetos h2 {
   color: var(--cor-5);
   margin-top: 60px;
 }
 
 /* TEXTO DA SECTION */
-
-.projetos p {
+.projetos > p {
   color: var(--cor-4);
   margin-bottom: 60px;
 }
-
 .projetos strong {
   color: var(--cor-5);
 }
 
 /* IMAGEM DECORATIVA */
-
 .projetos img {
   margin-top: -40px;
   justify-self: center;
@@ -35,7 +30,6 @@
 }
 
 /* DISPLAY COM MINIATURAS DOS PROJETOS */
-
 .projetos-display {
   grid-column: 1;
   grid-row: 2;
@@ -44,44 +38,45 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  
 }
 
 .projetos-display li {
   background-color: var(--cor-2);
   border-radius: 20px;
   height: 300px;
-  padding: 24px;
   box-sizing: border-box;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: end;
 }
 
 .projetos-display li:last-child {
   grid-column: span 2;
 }
 
-.projetos-display h3 {
-  font-family: "inter", sans-serif;
-  font-size: 1rem;
-  color: var(--cor-3);
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.projetos-display div {
+  width: 100%;
+  padding: 0px 24px 24px 24px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(216, 216, 216, 0.25) 49.48%, rgba(167, 167, 167, 0.5) 100%);
+  cursor: pointer;
 }
 
-.projetos-display h3::before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  border-radius: 4px;
-  display: block;
-  background-color: var(--cor-p1);
+.projetos-display h3 {
+  font-family: "inter", sans-serif;
+  font-size: 1.25rem;
+  color: var(--cor-p1);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.projetos-display p {
+  font-size: 1rem;
+  color: #747474;
+  max-width: 20ch;
 }
 
 /* =========================================== PROJETOS - MEDIA QUERIES ============================================= */
-
 @media (max-width: 1060px) {
   .projetos-display {
     margin-top: -80px;
@@ -118,7 +113,6 @@
     padding: 6px 20px 6px 20px;
     margin-left: -20px;
     margin-right: -20px;
-    
   }
 
   .projetos .seta-direita {
@@ -154,6 +148,12 @@
   .projetos img {
     margin-top: -20px;
   }
+  .projetos-display h3 {
+    font-size: 1.125rem;
+  }
+  .projetos-display p {
+    font-size: 0.875rem;
+  }
 }
 
 @media (max-width: 540px) {
@@ -164,7 +164,7 @@
   .projetos h2 {
     margin-top: 0px;
   }
-  .projetos p {
+  .projetos > p {
     margin-bottom: 20px;
   }
   .projetos img {
