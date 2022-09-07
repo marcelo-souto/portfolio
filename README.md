@@ -12,7 +12,7 @@ Desenvolvido utilizando:
 - **CSS** - foram utilizadas classes utilitárias no projeto, CSS FlexBox e Grid Layout para posicionamento dos containers e media-queries para garantir a responsividade em diversos tamanhos de telas e dispositivos.
 
 ## Aprendizado 
-Através desse projeto pude colocar em prática técnicas de criação de UI Design, criando um protótipo e depois replicando-o com fidelidade no código. Pude desenvolver minhas habiliades utilizando CSS FlexBox e Grid Layout, além de aprender a utilizar formulários e estilizá-los.
+Através desse projeto pude colocar em prática técnicas de criação de UI Design, criando um protótipo e depois replicando-o com fidelidade no código. Pude desenvolver minhas habilidades utilizando CSS FlexBox e Grid Layout, além de aprender a utilizar formulários e estilizá-los.
 
 ## Referências
 - [w3schools](https://www.w3schools.com/)
@@ -27,4 +27,4 @@ GitHub - [github.com/marcelo-souto](https://github.com/marcelo-souto)
 Linkedin - [linkedin/marcelo-souto676](https://www.linkedin.com/in/marcelo-souto676/)
 
 ## Agradecimentos Especiais
-Quero agradecer ao programa Programadores Cariocas desenvolvido pela Prefeitura do RJ, ao [SENAC RJ](https://www.senac.br/), a escola de programação [Resilia](https://www.resilia.com.br/) e a facilitadora [Letícia](https://www.linkedin.com/in/coelholetticia/) que têm possibilitado e me ajudado para esse projeto possa existir.
+Quero agradecer ao programa Programadores Cariocas desenvolvido pela Prefeitura do RJ, ao [SENAC RJ](https://www.senac.br/), a escola de programação [Resilia](https://www.resilia.com.br/) e a facilitadora [Letícia](https://www.linkedin.com/in/coelholetticia/) que têm possibilitado e me ajudado para que esse projeto possa existir.
