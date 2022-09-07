@@ -416,6 +416,12 @@ img {
   }
 }
 
+@media (max-width: 490px) {
+  .projetos-display::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 /* =========================================== FOOTER ============================================= */
 .footer-bg {
   background-color: var(--cor-6);
