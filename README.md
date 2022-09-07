@@ -1,5 +1,30 @@
 # Portfolio
 
-Projeto de uma página web de apresentação criada para ser utilizada como portfólio, onde contém secçoes sobre mim e meus projetos.
+Olá. me chamo Marcelo e quero apresentar a vocês o projeto de um website que desenvolvi para ser utilizado como portfólio.
 
 <img width="100%" alt="imagem-projeto" src="https://user-images.githubusercontent.com/100978478/188757510-14de009a-8723-4e3e-9bf0-618ded0911e7.png">
+
+Para ver o projeto hospedado e rodando [clique aqui](https://marcelo-souto.github.io/portfolio/index.html)
+
+## Tecnologias
+Desenvolvido utilizando:
+- **HTML** - foram utilizadas tags semânticas na construção da estrutura, hierarquização de títulos e formulários.
+- **CSS** - Foram utilizadas classes utilitárias no projeto, CSS FlexBox e Grid Layout para posicionamento dos containers e media-queries para garantir a responsividade em diversos tamanhos de telas e dispositivos.
+
+## Aprendizado 
+Através desse projeto pude colocar em prática técnicas de criação de design de interface e usuário, criando um protótipo e depois replicando-o com fidelidade. Pude desenvolver minhas habiliades utilizando CSS FlexBox e Grid Layout, onde no passado tive dificuldade, além de aprender a utilizar formulários e estilizá-los no CSS.
+
+## Referências
+- [w3schools](https://www.w3schools.com/)
+- [MDN Web Docs](https://developer.mozilla.org/pt-BR/)
+- [GitHub Pages](https://pages.github.com/)
+- [icons8](https://icons8.com.br/)
+- [DrawKit](https://drawkit.com/)
+
+## Contato
+Email - marcelosouto676@gmail.com  
+GitHub - [github.com/marcelo-souto](https://github.com/marcelo-souto)   
+Linkedin - [linkedin/marcelo-souto676](https://www.linkedin.com/in/marcelo-souto676/)
+
+## Agradecimentos Especiais
+Quero agradecer ao projeto Programadores Cariocas, desenvolvido pela Prefeitura do RJ, ao [SENAC RJ](https://www.senac.br/), a escola de programação [Resilia](https://www.resilia.com.br/) e a facilitadora [Letícia](https://www.linkedin.com/in/coelholetticia/) que tem possibilitado e ajudado a esse projeto existir.
