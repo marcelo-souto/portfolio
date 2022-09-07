@@ -1,6 +1,590 @@
-@import "./global.css";
-@import "./header.css";
-@import "./introducao.css";
-@import "./sobremim.css";
-@import "./projetos.css";
-@import "./footer.css";
+/* =========================================== VARIAVEIS DE CORES UTILIZADAS NO PROJETO ============================================= */
+:root {
+  --cor-0: #ffffff;
+  --cor-1: #eeeeee;
+  --cor-2: #dcdcdc;
+  --cor-3: #a4a4a4;
+  --cor-4: #4f4f4f;
+  --cor-5: #121212;
+  --cor-6: #000000;
+  --cor-p1: #9013dd;
+  --grad-1: linear-gradient(13.99deg, #000000 0%, #242424 77.98%);
+  --grad-2: linear-gradient(180deg, #9013dd 0%, #7320a6 100%);
+}
+
+/* SUAVIZAÇÃO DO SCROLL */
+html {
+  scroll-behavior: smooth;
+}
+
+/* RESET DE ESTILO PADRAO DO NAVEGADOR */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f5f5f5;
+  font-family: Roboto, sans-serif;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =========================================== CSS UTILITARIOS ============================================= */
+.container {
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+.titulo-2 {
+  font-family: Inter, sans-serif;
+  font-size: 4rem;
+  line-height: 1.125;
+  margin-bottom: 40px;
+}
+.texto-conteudo {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+/* =========================================== CSS UTILITARIOS - MEDIA QUERIES ============================================= */
+@media (max-width: 960px) {
+  .titulo-2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  .texto-conteudo {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 860px) {
+  .titulo-2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 720px) {
+  .titulo-2 {
+    font-size: 1.8rem;
+  }
+  .texto-conteudo {
+    font-size: 1rem;
+  }
+}
+
+/* =========================================== HEADER ============================================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  list-style: none;
+}
+.header-menu a {
+  text-decoration: none;
+  color: currentColor;
+  display: block;
+  padding: 16px 0;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  transition: 0.3s;
+}
+
+/* =========================================== HEADER - MEDIA QUERIES ============================================= */
+@media (max-width: 680px) {
+  .header {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .header img {
+    max-width: 160px;
+  }
+  .header-menu {
+    gap: 20px;
+    justify-content: center;
+  }
+  .header-menu a {
+    background-color: var(--cor-1);
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  .header-menu a:hover {
+    background-color: var(--cor-2);
+  }
+}
+
+/* =========================================== MAIN INTRODUCAO  ============================================= */
+.introducao {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  padding-top: 40px;
+}
+.introducao span {
+  font-size: 2rem;
+  line-height: 1.2;
+  color: var(--cor-3);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.introducao h1 {
+  font-size: 4.75rem;
+  line-height: 1.2;
+}
+.introducao img {
+  justify-self: center;
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.1));
+}
+
+/* =========================================== INTRODUCAO - MEDIA QUERIES ============================================= */
+@media (max-width: 960px) {
+  .introducao h1 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 860px) {
+  .introducao h1 {
+    font-size: 3rem;
+  }
+  .introducao span {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 720px) {
+  .introducao {
+    padding-top: 0;
+  }
+  .introducao h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 540px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao img {
+    display: none;
+  }
+  .introducao span {
+    color: var(--cor-p1);
+  }
+}
+
+/* =========================================== SECTION SOBRE MIM ============================================= */
+.sobremim-conteudo {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  gap: 60px;
+  align-items: center;
+  background: var(--grad-1);
+  padding: 60px;
+  box-sizing: border-box;
+  border-radius: 26px;
+  margin-top: -60px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+.sobremim img {
+  max-width: 340px;
+}
+.sobremim h2 {
+  color: var(--cor-0);
+}
+.sobremim p {
+  color: var(--cor-3);
+}
+.sobremim strong {
+  color: var(--cor-0);
+  font-weight: 700;
+}
+
+/* =========================================== SOBRE MIM - MEDIA QUERIES ============================================= */
+@media (max-width: 960px) {
+  .sobremim-conteudo {
+    padding: 40px;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+  }
+  .sobremim img {
+    width: 100%;
+  }
+}
+@media (max-width: 720px) {
+  .sobremim-conteudo {
+    padding: 40px 30px;
+  }
+}
+@media (max-width: 640px) {
+  .sobremim-conteudo {
+    margin-top: -30px;
+    gap: 20px;
+  }
+}
+@media (max-width: 540px) {
+  .sobremim-conteudo {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 40px;
+    margin-top: 40px;
+  }
+}
+
+/* =========================================== SECTION PROJETOS ============================================= */
+.projetos {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 40px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+/* TITULO DA SECTION */
+.projetos h2 {
+  color: var(--cor-5);
+  margin-top: 60px;
+}
+
+/* TEXTO DA SECTION */
+.projetos > p {
+  color: var(--cor-4);
+  margin-bottom: 60px;
+}
+.projetos strong {
+  color: var(--cor-5);
+}
+
+/* IMAGEM DECORATIVA */
+.projetos img {
+  margin-top: -40px;
+  justify-self: center;
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.10));
+}
+
+/* DISPLAY COM MINIATURAS DOS PROJETOS */
+.projetos-display {
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: -120px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.projetos-display li {
+  background-color: var(--cor-2);
+  border-radius: 20px;
+  height: 300px;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  align-items: end;
+}
+
+.projetos-display li:last-child {
+  grid-column: span 2;
+}
+
+.projetos-display div {
+  width: 100%;
+  padding: 0px 24px 24px 24px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(216, 216, 216, 0.25) 49.48%, rgba(167, 167, 167, 0.5) 100%);
+  cursor: pointer;
+}
+
+.projetos-display h3 {
+  font-family: "inter", sans-serif;
+  font-size: 1.25rem;
+  color: var(--cor-p1);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.projetos-display p {
+  font-size: 1rem;
+  color: #747474;
+  max-width: 20ch;
+}
+
+/* =========================================== PROJETOS - MEDIA QUERIES ============================================= */
+@media (max-width: 1060px) {
+  .projetos-display {
+    margin-top: -80px;
+  }
+}
+
+@media (max-width: 900px) {
+  .projetos-display {
+    grid-column: 1 / -1;
+    margin-top: 0px;
+    grid-template-columns: repeat(3, 240px);
+    overflow-x: auto;
+  }
+  .projetos-display li {
+    height: 240px;
+  }
+  .projetos-display li:last-child {
+    grid-column: 3;
+  }
+}
+
+@media (max-width: 860px) {
+  .projetos h2 {
+    margin-top: 40px;
+  }
+  .projetos {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .projetos-display {
+    gap: 20px;
+    padding: 6px 20px 6px 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .projetos .seta-direita {
+    width: 34px;
+    height: 14px;
+    position: absolute;
+    bottom: -20px;
+    right: 24px;
+    background: url("../image/arrow.svg") no-repeat center;
+    background-size: 100%;
+    animation: apontando .8s infinite ;
+    transition: opacity .3s ;
+    display: none;
+  }
+
+  @keyframes apontando {
+    0% {
+      transform: translate(0px);
+    }
+    50% {
+      transform: translate(10px);
+    }
+    100% {
+      transform: translate(0px);
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .projetos {
+    gap: 20px;
+  }
+  .projetos img {
+    margin-top: -20px;
+  }
+  .projetos-display h3 {
+    font-size: 1.125rem;
+  }
+  .projetos-display p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .projetos {
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+  }
+  .projetos h2 {
+    margin-top: 0px;
+  }
+  .projetos > p {
+    margin-bottom: 20px;
+  }
+  .projetos img {
+    display: none;
+  }
+}
+
+/* =========================================== FOOTER ============================================= */
+.footer-bg {
+  background-color: var(--cor-6);
+}
+.footer {
+  display: grid;
+  grid-template-areas: "titulo formulario" "contatos formulario" "copyright copyright";
+  padding-top: 60px;
+  padding-bottom: 60px;
+  gap: 40px;
+}
+.footer h2 {
+  font-family: inter, sans-serif;
+  color: var(--cor-0);
+  font-size: 2rem;
+  margin-bottom: 80px;
+  grid-area: titulo;
+}
+.footer-contatos {
+  grid-area: contatos;
+}
+
+/* INFORMAÇOES DE CONTATO  */
+.contato-info li {
+  list-style: none;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--cor-3);
+}
+.contato-info li + li {
+  margin-top: 8px;
+}
+.contato-info a {
+  text-decoration: none;
+  color: currentColor;
+  transition: 0.3s;
+}
+.contato-info a:hover {
+  color: var(--cor-0);
+}
+
+/* INFORMAÇOES DAS REDES SOCIAIS */
+.contato-redes {
+  margin-top: 40px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* FORMULARIO DE CONTATO */
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  grid-area: formulario;
+}
+.formulario div:nth-child(3) {
+  grid-column: span 2;
+}
+.formulario div {
+  display: flex;
+  flex-direction: column;
+}
+.formulario label {
+  color: var(--cor-0);
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+.formulario input,
+.formulario textarea {
+  background-color: var(--cor-5);
+  box-sizing: border-box;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #151515;
+  resize: none;
+  color: var(--cor-3);
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 100%;
+}
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: solid 2px #2d2d2d;
+}
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--cor-4);
+}
+.formulario button {
+  background: var(--grad-2);
+  border-radius: 6px;
+  border: none;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--cor-1);
+  cursor: pointer;
+  justify-self: start;
+  padding: 16px 24px;
+  grid-column: span 2;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+.formulario button:hover {
+  background: linear-gradient(180deg, #8309ce 0, #5d128c 100%);
+}
+.footer-copy {
+  color: var(--cor-4);
+  grid-area: copyright;
+}
+
+/* =========================================== FOOTER - MEDIA QUERIES ============================================= */
+@media (max-width: 1060px) {
+  .footer {
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+  }
+}
+@media (max-width: 840px) {
+  .footer {
+    grid-template-areas: "titulo titulo" "formulario formulario" "contatos contatos" "copyright copyright";
+    padding-top: 40px;
+    gap: 40px;
+  }
+  .footer h2 {
+    margin-bottom: 0;
+  }
+  .contato-info li {
+    font-size: 1rem;
+  }
+  .formulario {
+    max-width: 520px;
+    gap: 20px;
+  }
+  .formulario button {
+    padding: 16px 16px;
+    font-size: 0.8rem;
+  }
+  .footer-copy {
+    margin-top: 20px;
+  }
+  .contato-info {
+    margin-top: -20px;
+    border-top: 1px solid var(--cor-5);
+    padding-top: 20px;
+  }
+}
+@media (max-width: 640px) {
+  .footer h2 {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 500px) {
+  .formulario {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+  .formulario div:nth-child(2),
+  .formulario div:nth-child(3) {
+    grid-column: 1;
+  }
+  .footer-copy {
+    font-size: 0.8rem;
+  }
+}
